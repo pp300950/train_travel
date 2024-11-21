@@ -321,29 +321,8 @@
         }
 
         #section2 {
-    position: relative;
-    background-image: url("https://f.ptcdn.info/989/041/000/o5zk866c5CTdkOrOADK-o.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    overflow: hidden;
-}
-
-/* ซ้อนเลเยอร์สำหรับทำภาพเบลอ */
-#section2::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: inherit; /* ใช้ภาพเดียวกัน */
-    background-size: inherit;
-    background-position: inherit;
-    filter: blur(5px); /* ค่าความเบลอ */
-    z-index: -1; /* ซ้อนอยู่ด้านล่าง */
-}
-
+            background-image: url("https://images.twinkl.co.uk/tw1n/image/private/t_630/u/ux/what-is-a-beach-1_ver_1.jpg");
+        }
 
         #section3 {
             background-image: url("https://ik.imagekit.io/click2go/tours/00004/gallery/01_Ang_ThongNational_Marine_Park.jpg?tr=w-720");
@@ -535,277 +514,79 @@
             /* ระยะห่างจากด้านบน */
         }
     </style>
+
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap");
-
-.cc1{
-    *,
-*:before,
-*:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
-}
-
-body {
-  background-color: #0d0a0b;
-  background: linear-gradient(145deg, #55566a 0%, #131318 76%);
-}
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  place-items: center;
-  min-height: 100vh;
-}
-
-/* Content */
-
-.content {
-  padding-left: 120px;
-  color: #c7c7c7c9;
-  user-select: none;
-}
-
-.content h1 {
-  font-family: "Dancing Script", cursive;
-  font-size: clamp(2.5rem, 4vw, 6rem);
-  font-weight: 700;
- 
-
-  line-height: 1.1;
-  margin-bottom: 36px;
-  padding-left: 10px;
-}
-
-.content p {
-  font-size: clamp(0.9rem, 4vw, 1.2rem);
-  line-height: 1.6;
-  padding-right: 100px;
-}
-
-.btn {
-  background-color: #f76591;
-  background-image: linear-gradient(-180deg, #ffc16f, #f76591);
-  font-size: clamp(0.8rem, 8vw, 0.9rem);
-  font-weight: 600;
-  color: #fff;
-  width: max-content;
-  outline: 0;
-  border: 0;
-  border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 10px 20px;
-  margin-top: 26px;
-  text-align: center;
-  transform: scale(1);
-  transition: all 0.2s ease-in;
-  cursor: pointer;
-  touch-action: manipulation;
-  user-select: none;
-  -webkit-user-select: none;
-  pointer-events: auto;
-}
-
-.btn:hover {
-  box-shadow: 0 4px 10px rgba(247, 101, 145, 0.5);
-  transform: scale(0.98);
-}
-
-/* Stacked Cards */
-
-.stack {
-  position: relative;
-}
-
-.card {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  width: 450px;
-  height: auto;
-  max-height: 400px;
-  border-radius: 2rem;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25),
-    0 15px 20px 0 rgba(0, 0, 0, 0.125);
-  transition: transform 0.6s;
-  user-select: none;
-}
-
-.card img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-  object-fit: cover;
-  pointer-events: none;
-}
-
-.card:nth-last-child(n + 5) {
-  --x: calc(-50% + 90px);
-  transform: translate(var(--x), -50%) scale(0.85);
-  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.01);
-}
-
-.card:nth-last-child(4) {
-  --x: calc(-50% + 60px);
-  transform: translate(var(--x), -50%) scale(0.9);
-}
-
-.card:nth-last-child(3) {
-  --x: calc(-50% + 30px);
-  transform: translate(var(--x), -50%) scale(0.95);
-}
-
-.card:nth-last-child(2) {
-  --x: calc(-50%);
-  transform: translate(var(--x), -50%) scale(1);
-}
-
-.card:nth-last-child(1) {
-  --x: calc(-50% - 30px);
-  transform: translate(var(--x), -50%) scale(1.05);
-}
-
-.card:nth-last-child(1) img {
-  box-shadow: 0 1px 5px 5px rgba(255, 193, 111, 0.5);
-}
-
-.swap {
-  animation: swap 1.3s ease-out forwards;
-}
-
-@keyframes swap {
-  30% {
-    transform: translate(calc(var(--x) - 250px), -50%) scale(0.85) rotate(-5deg)
-      rotateY(65deg);
+        .photo-grid {
+  max-width:1200px;
+  margin:0 auto;
+  column-count: 3;
+  column-gap:0;
+  @media all and (max-width:800px){
+    column-count: 2;
   }
-  100% {
-    transform: translate(calc(var(--x) - 30px), -50%) scale(0.5);
-    z-index: -1;
+  @media all and (max-width:400px){
+    column-count: 1;
   }
-}
-
-/* Media queries for keyframes */
-
-@media (max-width: 1200px) {
-  @keyframes swap {
-    30% {
-      transform: translate(calc(var(--x) - 200px), -50%) scale(0.85)
-        rotate(-5deg) rotateY(65deg);
+  a {
+    position:relative;
+    z-index:0;
+    display:block;
+    max-height:100vh;
+    overflow:hidden;
+    img {
+      display:block;
+      width:100%;
+      height:auto;
+      opacity:.85;
+      filter: saturate(.15);
+      transition:.25s ease-in-out;
     }
-
-    100% {
-      transform: translate(calc(var(--x) - 30px), -50%) scale(0.5);
-      z-index: -1;
+    .image-description {
+      position:absolute;
+      padding:20px;
+      background:rgba(black,.6);
+      bottom:0;
+      width:100%;
+      transform:translateY(15px);
+      opacity:0;
+      transition:.25s ease-in-out;
+      color:white;
+      font-size:20px;
+    }
+    &:hover {
+      z-index:99;
+      img {
+        opacity:1;
+        filter: saturate(.5);
+      }
+    }
+    &:focus {
+      z-index:100;
+      outline:none;
+      box-shadow:0 0 50px 20px rgba(black,.5);
+      img {
+        opacity:1;
+        filter: saturate(1);
+        transform:scale(1.05);
+      }
+      .image-description {
+        transform:translateY(0);
+        opacity:1;
+      }
     }
   }
+  h1 {
+  padding:30px 20px 10px 20px;
+  text-align:center;
+  font-size:25px;
+  font-weight:500;
+  color:white;
 }
 
-@media (max-width: 1050px) {
-  @keyframes swap {
-    30% {
-      transform: translate(calc(var(--x) - 150px), -50%) scale(0.85)
-        rotate(-5deg) rotateY(65deg);
-    }
-
-    100% {
-      transform: translate(calc(var(--x) - 30px), -50%) scale(0.5);
-      z-index: -1;
-    }
-  }
-}
-
-/* Media queries for other classes */
-
-@media (max-width: 1200px) {
-  .content {
-    padding-left: 80px;
-  }
-
-  .content p {
-    padding-right: 40px;
-  }
-
-  .card {
-    width: 250px;
-    height: 380px;
-  }
-}
-
-@media (max-width: 1050px) {
-  .content {
-    padding-left: 60px;
-  }
-
-  .content p {
-    line-height: 1.5;
-  }
-
-  .card {
-    width: 220px;
-    height: 350px;
-  }
-}
-
-@media (max-width: 990px) {
-  .content p {
-    padding-right: 0;
-  }
-
-  .card {
-    width: 200px;
-    height: 300px;
-  }
-}
-
-@media (max-width: 950px) {
-  main {
-    grid-template-columns: 1fr;
-    grid-template-rows: 4fr 3fr;
-    grid-template-areas:
-      "stacked"
-      "content";
-  }
-
-  .content {
-    grid-area: content;
-    text-align: center;
-    padding: 0 90px;
-  }
-
-  .btn {
-    margin-bottom: 30px;
-  }
-
-  .stack {
-    grid-area: stacked;
-  }
-}
-
-@media (max-width: 650px) {
-  main {
-    grid-template-rows: 1fr 1fr;
-  }
-
-  .content {
-    padding: 0 50px;
-  }
-
-  .content h1 {
-    padding-left: 0;
-  }
-
-  .btn {
-    padding: 8px 16px;
-  }
-
-  .card {
-    width: 180px;
-    height: 260px;
-  }
+p {
+  text-align:center;
+  padding-bottom:30px;
+  color:rgba(white,.5);
 }
 }
     </style>
@@ -832,12 +613,12 @@ main {
                     <div class="card" style="width:100%;">
                         <a href="#section2">
                             <div class="box1">
-                                <h2>ประวัติความเป็นมา<div>ของรถไฟ</div></h2>
+                                <h2>สถานที่ท่องเที่ยว<div>ที่รถไฟวิ่งผ่าน</div></h2>
                             </div>
                         </a>
                         <a href="#section3">
                             <div class="box2">
-                                <h2>สถานที่ท่องเที่ยว<div>ที่รถไฟวิ่งผ่าน</div></h2>
+                                <h2>Island</h2>
                             </div>
                         </a>
                         <a href="#section4">
@@ -955,55 +736,7 @@ main {
             </div>
         </div>
 
-        
         <div id="section2" class="event">
-            <div class="cc1" style="z-index: 999;">
-                <main>
-                    <div class="content" style="margin-left: 90px;">
-                      <h1>ประวัติความเป็นมา<div>ของรถไฟไทย</div></h1>
-                      <p style="width: 750px; margin-left: 250px; font-size: x-large; color: whitesmoke;">
-                        การรถไฟแห่งประเทศไทยมีจุดเริ่มต้นในสมัยรัชกาลที่ 5 เมื่อพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัวทรงตระหนักถึงความสำคัญของระบบขนส่งทางรางต่อการพัฒนาประเทศ ทรงโปรดเกล้าฯ ให้สร้างทางรถไฟสายแรกในปี พ.ศ. 2436 ซึ่งเชื่อมระหว่างกรุงเทพฯ (สถานีหัวลำโพง) และสมุทรปราการ เรียกว่าสายกรุงเทพฯ-ปากน้ำ ต่อมาในปี พ.ศ. 2439 ได้มีการเปิดให้บริการเส้นทางรถไฟสายเหนือระหว่างกรุงเทพฯ และอยุธยา ซึ่งเป็นส่วนหนึ่งของทางรถไฟสายเหนือ-สายตะวันออกเฉียงเหนือที่พัฒนาเพื่อเชื่อมกรุงเทพฯ กับภูมิภาคต่าง ๆ การพัฒนารถไฟไทยในยุคแรกได้รับการสนับสนุนจากผู้เชี่ยวชาญต่างชาติ และในปี พ.ศ. 2450 การรถไฟสายใต้ได้เปิดให้บริการครั้งแรกจากกรุงเทพฯ สู่เพชรบุรี โดยมีการขยายเส้นทางอย่างต่อเนื่องจนถึงสงขลาและมาเลเซีย ระบบรถไฟไทยได้กลายเป็นส่วนสำคัญของการขนส่งทั้งผู้โดยสารและสินค้า นับแต่นั้นการรถไฟไทยได้พัฒนาอย่างต่อเนื่องจนถึงปัจจุบัน
-                      </p>
-                     
-                    </div>
-              
-                    <div class="stack" style="margin-right: 90px;">
-                      <div class="card">
-                        <img
-                          src="https://image.tnews.co.th/newscenter/images/userfiles/image/12366059_10154398897607786_5353060172068496108_o.jpg?x-image-process=style/lg-webp"
-                          alt="" />
-                      </div>
-                      <div class="card">
-                        <img
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7OSH9gOQtGgyVE5o3gEF_UxzzSUDykgW8WQ&s"
-                          alt="" />
-                      </div>
-                      <div class="card">
-                        <img
-                          src="https://www.matichonweekly.com/wp-content/uploads/2016/12/13895365_1097466367005722_3428353453030127221_n-696x522.jpg"
-                          alt="" />
-                      </div>
-                      <div class="card">
-                        <img
-                          src="https://today-obs.line-scdn.net/0hK1n5kopgFB5TTAdjxihrSWsaGG9gKg4XcS9feXNMTS0uYFJLOH5HfXJLHjJ3dARKc3kIeCVIGXl7eQMcbg/w644"
-                          alt="" />
-                      </div>
-                      <div class="card">
-                        <img
-                          src="https://f.ptcdn.info/992/041/000/o5zo085rtpcJg2EF3iL-o.jpg"
-                          alt="" />
-                      </div>
-                      <div class="card">
-                        <img
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrSE2mLQalNuMBkH6henkK2jYQReFCoo5q2A&s"
-                          alt="" />
-                      </div>
-                    </div>
-                  </main>
-            </div>
-        </div>
-
-        <div id="section3" class="event">
             <div class="grid-container">
                 <div class="grid-item"
                     data-title="เส้นทางรถไฟ: กรุงเทพ (สถานีวงเวียนใหญ่) → มหาชัย → บ้านแหลม → แม่กลอง"
@@ -1145,10 +878,10 @@ main {
                 </div>
 
             </div>
-         
+
             <div class="details-container">
                 <h2 id="location-title">เลือกจังหวัดที่ท่านต้องการ</h2>
-                <p id="location-landmark"><h1>เพื่อให้เราเเนะนำสถานที่ท่องเที่ยวที่รถไฟวิ่งผ่าน</h1></p>
+                <p id="location-landmark"></p>
                 <div class="image-container">
                     <img id="location-pictur1">
                     <img id="location-pictur2">
@@ -1168,6 +901,70 @@ main {
                 <!-- เพิ่ม <p> สำหรับแสดงลิงค์ -->
 
             </div>
+        </div>
+
+        <div id="section3" class="event">
+            
+<h1>Pure CSS Gallery</h1>
+<p>Try clicking an image, or tabbing through them!</p>
+<div class="photo-grid">
+  <div class="box-shadow-spacer"></div>
+  <a href="#image-one" id="image-one">
+    <img src='https://images.unsplash.com/photo-1544568100-847a948585b9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+    <div class="image-description">
+      <div class="title">Happy Pup</div>
+    </div>
+  </a>
+  <a href="#image-two" id="image-two">
+    <img src='https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+    <div class="image-description">
+      <div class="title">Side Eye</div>
+    </div>
+  </a>
+  <a href="#image-three" id="image-three">
+    <img src='https://images.unsplash.com/photo-1510771463146-e89e6e86560e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+    <div class="image-description">
+      <div class="title">A Flower for You!</div>
+    </div>
+  </a>
+  <a href="#image-four" id="image-four">
+    <img src='https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+    <div class="image-description">
+      <div class="title">Food Please?</div>
+    </div>
+  </a>
+  <a href="#image-five" id="image-five">
+    <img src='https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+    <div class="image-description">
+      <div class="title">I Love Water!</div>
+    </div>
+  </a>
+  <a href="#image-six" id="image-six">
+    <img src='https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+    <div class="image-description">
+      <div class="title">Friends are Forever</div>
+    </div>
+  </a>
+  <a href="#image-seven" id="image-seven">
+    <img src='https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+    <div class="image-description">
+      <div class="title">Two Lips around Tulip</div>
+    </div>
+  </a>
+  <a href="#image-eight" id="image-eight">
+    <img src='https://images.unsplash.com/photo-1518717758536-85ae29035b6d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+    <div class="image-description">
+      <div class="title">Can Haz Treaties?</div>
+    </div>
+  </a>
+  <a href="#image-nine" id="image-nine">
+    <img src="https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=400&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="">
+    <div class="image-description">
+      <div class="title">I am so freakin' smart.</div>
+    </div>
+  </a>
+</div>
+
         </div>
 
         <div id="section4" class="event">
@@ -1274,38 +1071,6 @@ main {
             });
         });
 
-        const stack = document.querySelector(".stack");
-const cards = Array.from(stack.children)
-  .reverse()
-  .filter((child) => child.classList.contains("card"));
-
-cards.forEach((card) => stack.appendChild(card));
-
-function moveCard() {
-  const lastCard = stack.lastElementChild;
-  if (lastCard.classList.contains("card")) {
-    lastCard.classList.add("swap");
-
-    setTimeout(() => {
-      lastCard.classList.remove("swap");
-      stack.insertBefore(lastCard, stack.firstElementChild);
-    }, 1200);
-  }
-}
-
-let autoplayInterval = setInterval(moveCard, 4000);
-
-stack.addEventListener("click", function (e) {
-  const card = e.target.closest(".card");
-  if (card && card === stack.lastElementChild) {
-    card.classList.add("swap");
-
-    setTimeout(() => {
-      card.classList.remove("swap");
-      stack.insertBefore(card, stack.firstElementChild);
-    }, 1200);
-  }
-});
 
     </script>
 </body>
